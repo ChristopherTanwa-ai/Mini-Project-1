@@ -1,1 +1,18 @@
 h1 {text-align:center}
+
+#index-h2-header{
+    text-align:center;
+    padding-top: 2%;
+    padding-bottom:2%;
+}
+
+.card{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+#link-text{
+    color: black;
+    text-decoration: none;
+}
