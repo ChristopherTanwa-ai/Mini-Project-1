@@ -1,13 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+
 h1 {text-align:center}
 
 #index-h2-header{
+    font-family: 'Gloock';
     color:rgb(27, 15, 56);
-    font-weight: 300;
+    font-weight: 400;
     text-align:center;
     padding-top: 2%;
     padding-bottom:2%;
 }
-
 #product-section{
     background: linear-gradient(360deg, rgb(155, 187, 201) 0%, rgba(200,221,220,1) 39%, rgba(233,239,239,1) 75%, rgba(255,255,255,1) 100%); 
 }
@@ -21,14 +28,17 @@ h1 {text-align:center}
     background-color: transparent !important;
 }
 #link-text{
+    font-family: 'Hind';
     color: black;
     text-decoration: none;
 }
 #price-text{
+    font-size: 1rem;
+    font-family: 'Hind';
     color: red;
     text-decoration: none;
+   
 }
-
 .card-title{
     margin-bottom: 0%;
     font-weight: 600;

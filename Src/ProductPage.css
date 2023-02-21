@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+#prodimg{
+    max-height: 90%;
+    max-width: 50%;
+    padding-top: 10%;
+}
+
+#prodheader{
+    font-family: 'Gloock';
+}
+
+#price{
+    font-family: 'Hind',sans-serif;
+    color: red;
+}
+
+#prodtext{
+    margin: right 50%; ;
+}
+#buy{
+    font-weight: 600;
+    margin-top: 20%;
+    padding-top: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5px;
+}
+
