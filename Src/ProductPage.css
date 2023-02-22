@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 #prodimg{
-    max-height: 90%;
-    max-width: 50%;
+    max-height: 100vh;
+    max-width: 50vh;
     padding-top: 10%;
 }
 
@@ -12,12 +12,16 @@
 }
 
 #price{
+    font-size:x-large;
+    margin-top: 30px;
     font-family: 'Hind',sans-serif;
     color: red;
 }
 
 #prodtext{
-    margin: right 50%; ;
+    float: left;
+    margin-right: 300px;
+    margin-top: 75px;
 }
 #buy{
     font-weight: 600;
