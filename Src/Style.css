@@ -18,6 +18,7 @@ h1 {text-align:center}
 }
 #product-section{
     background: linear-gradient(360deg, rgb(155, 187, 201) 0%, rgba(200,221,220,1) 39%, rgba(233,239,239,1) 75%, rgba(255,255,255,1) 100%); 
+    padding-top: 2%;
 }
 .card{
     margin: 0 auto; /* Added */
