@@ -111,7 +111,7 @@ header.nav {
     display: flex;
     height: 40px;
     width: 100%;
-    background-color:#d1d9dfdb;
+    background-color:#9ebed7db;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -138,6 +138,14 @@ header.nav .title {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+header.nav.title a{
+    text-decoration: none;
+}
+
+#all-products-text{
+    text-decoration: none;
+    color: black;
 }
 
 header.nav .information {
