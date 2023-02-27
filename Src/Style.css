@@ -70,11 +70,11 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20pt;
     position: relative;
-    top: 330px;
+    /* top: 330px;*/
   }
 
   .flex-item { 
-    margin-top: auto;
+    margin-top: 5%;
     margin-bottom: auto;
     height: 37px;
     background-color: rgba(255, 255, 255, 0.9);
