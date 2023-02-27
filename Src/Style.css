@@ -94,3 +94,90 @@ body{
     color: black;
 }
 
+
+
+header.nav {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color:#0677c2;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header.nav .logo {
+    width: 60px;
+    height: 100%;
+    position: relative;
+}
+
+header.nav .logo img {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header.nav .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header.nav .information {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+header.nav .information > div {
+    border-radius: 100%;
+    overflow: hidden;
+}
+ 
+header.nav .information .login {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    position: relative;
+}
+
+header.nav .information .basket {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.fill {
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+}
+
+.fill img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.my-test {
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(105, 20, 20);
+}
+
+#test2 {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(20, 20, 146);
+}
