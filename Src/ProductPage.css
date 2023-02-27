@@ -9,12 +9,10 @@
 
 #prodheader{
     font-family: 'Gloock';
-    padding-top: 5%;
 }
 
 #price{
     font-size:x-large;
-    margin-top: 30px;
     font-family: 'Hind',sans-serif;
     color: red;
 }
@@ -22,11 +20,10 @@
 #prodtext{
     float: left;
     margin-right: 300px;
-    margin-top: 75px;
+
 }
 #buy{
     font-weight: 600;
-    margin-top: 20%;
     padding-top: 5px;
     padding-left: 20%;
     padding-right: 20%;
