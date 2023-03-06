@@ -202,3 +202,61 @@ header.nav .information .basket {
     height: 80vh;
     background-color: rgb(20, 20, 146);
 }
+
+@media screen and (max-width: 990px) {
+    #cart-text {
+      justify-content: start !important;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+   .row .h4 {
+     font-size: medium;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .row .h2 {
+      font-size: large;
+      font-weight: 700;
+     }
+   }
+
+   @media screen and (max-width: 990px) {
+    .card-body .col-md-2 {
+    
+      justify-content: center !important;
+      padding-top: 3%;
+     }
+   }
+
+   @media screen and (max-width: 990px) {
+    .card-body .col-md-2 p {
+    text-align: center !important;
+      justify-content: center !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+      font-size: medium;
+     }
+   }
+
+   @media screen and (max-width: 990px) {
+    #price-total {
+      float:left !important;
+     }
+   }
+   @media screen and (max-width: 990px) {
+    #bottom-btn {
+        padding-bottom: 10%;
+        justify-content: center !important;
+     }
+   }
+
+   #price-total{
+    float: right;
+   }
+   @media screen and (max-width: 990px) {
+    #remove-btn {
+        padding-top: 8%;
+      justify-content: center !important;
+    }
+  }
