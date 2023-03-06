@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <title>Basket</title>
+    <script src="App.js"> </script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
         <div class="container h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col">
-              <p><span class="h2">Shopping Cart </span><span class="h4">(1 item in your cart)</span></p>
+              <p><span class="h2" id="message">Your Shopping Cart </span><span class="h4">(1 item in your cart)</span></p>
       
               <div class="card mb-4">
                 <div class="card-body p-4">
@@ -127,4 +128,7 @@
           </div>
         </div>
       </section>
+  <script>
+    document.body.onload = addNameToBasket(); 
+  </script>
 </body>
