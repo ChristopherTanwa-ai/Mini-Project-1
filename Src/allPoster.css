@@ -5,10 +5,7 @@
     border-bottom: 1px solid black;
     font-weight: 300 !important;
 }
-.form-check-input[type="checkbox"] {
-    /* border-radius: 0 !important; */}
-
-.col-2{
+#sidenav{
     background-color: #DFE7EC;
     
 }
@@ -24,3 +21,13 @@
     font-family: Gloock ,Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem !important;
 }
+
+@media screen and (max-width: 700px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
+  }
