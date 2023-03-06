@@ -31,3 +31,10 @@
     .sidenav a {float: left;}
     div.content {margin-left: 0;}
   }
+
+  @media screen and (max-width: 990px) {
+    #main-container {
+      min-height: auto;
+    }
+  }
+  
