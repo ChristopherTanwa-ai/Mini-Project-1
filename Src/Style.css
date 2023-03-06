@@ -260,3 +260,12 @@ header.nav .information .basket {
       justify-content: center !important;
     }
   }
+
+#left-section{
+    background-color: whitesmoke;
+    opacity: 0.7;
+    min-height: 50vh;
+}
+
+
+
