@@ -74,21 +74,21 @@
                 <div class="row ps-4">
                   <div class="form-check mb-2">
                     <input
-                      onclick="filterObjects('Test1', 'Artist')"
+                      onclick="filterObjects('Van-gogh', 'Artist')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
                       id="artist1"
                     />
                     <label class="form-check-label " for="artist1">
-                      <p class="lead mx-0 my-0">Test1</p>
+                      <p class="lead mx-0 my-0">Van Gogh</p>
                     </label>
                   </div>
                 </div>
                 <div class="row ps-4">
                   <div class="form-check mb-2">
                     <input
-                      onclick="filterObjects('monet', 'Artist')"
+                      onclick="filterObjects('Monet', 'Artist')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -102,6 +102,7 @@
                 <div class="row ps-4">
                   <div class="form-check mb-2">
                     <input
+                      onclick="filterObjects('Picasso', 'Artist')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -131,6 +132,7 @@
                   </div>
                   <div class="form-check mb-2">
                     <input
+                      onclick="filterObjects('Cubism', 'Style')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -142,6 +144,7 @@
                   </div>
                   <div class="form-check mb-2">
                     <input
+                    onclick="filterObjects('Abstract', 'Style')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -159,7 +162,7 @@
                 <div class="row ps-4">
                   <div class="form-check mb-2">
                     <input
-                    onclick="filterObjects('A2', 'Format')"
+                      onclick="filterObjects('A2', 'Format')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -171,6 +174,7 @@
                   </div>
                   <div class="form-check mb-2">
                     <input
+                      onclick="filterObjects('A3', 'Format')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -182,6 +186,7 @@
                   </div>
                   <div class="form-check mb-2">
                     <input
+                      onclick="filterObjects('A4', 'Format')"
                       class="form-check-input"
                       type="checkbox"
                       value=""
@@ -212,7 +217,8 @@
               <div class="row pt-4">
 
                 <!--Product overview Test 1-->
-                <div id="Posters" class="col filterDiv Test1 Impressionist A3">
+
+                <div id="Posters" class="col filterDiv Van-gogh Impressionist A3">
                   
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/HilmaChildhood.html"
@@ -225,7 +231,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/HilmaChildhood.html" id="link-text"
-                          >Test 1</a
+                          >Van Gogh Test 1</a
                         >
                       </h6>
                       <p class="card-text">
@@ -240,9 +246,9 @@
                   </div>
                 </div>
 
-
+                <!--Product overview Test 2-->
                 
-                <div id="Posters" class="col filterDiv monet">
+                <div id="Posters" class="col filterDiv Monet Cubism A4">
 
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/A.P.AtelierPeacock.html"
@@ -254,7 +260,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/A.P.AtelierPeacock.html" id="link-text"
-                          >Test 2</a
+                          >Monet Test 2</a
                         >
                       </h6>
                       <p class="card-text">
@@ -269,8 +275,9 @@
                   </div>
                 </div>
 
+                <!--Product overview Test 3-->
 
-                <div id="Posters" class="col">
+                <div id="Posters" class="col filterDiv Picasso Abstract A2">
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/AlberoDeLimone.html"
                       ><img
@@ -281,7 +288,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/ProductPage.html" id="link-text"
-                          >Test 3</a
+                          >Picasso Test 3</a
                         >
                       </h6>
                       <p class="card-text">
@@ -296,8 +303,9 @@
                   </div>
                 </div>
 
+                <!--Product overview Test 4-->
 
-                <div id="Posters" class="col">
+                <div id="Posters" class="col filterDiv Van-gogh Cubism A2">
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/ProductPage.html"
                       ><img
@@ -308,7 +316,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/ProductPage.html" id="link-text"
-                          >Hilma af Klint</a
+                          >Van Gogh Test 4</a
                         >
                       </h6>
                       <p class="card-text">
@@ -323,7 +331,9 @@
                   </div>
                 </div>
 
-                <div id="Posters" class="col">
+                <!--Product overview Test 5-->
+
+                <div id="Posters" class="col filterDiv Monet Abstract A2">
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/ProductPage.html"
                       ><img
@@ -334,7 +344,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/ProductPage.html" id="link-text"
-                          >Hilma af Klint</a
+                          >Monet Test 5</a
                         >
                       </h6>
                       <p class="card-text">
@@ -349,8 +359,9 @@
                   </div>
                 </div>
 
+                <!--Product overview Test 6-->
                 
-                <div id="Posters" class="col">
+                <div id="Posters" class="col filterDiv Picasso Cubism A3">
                   <div class="card border-0 bg-transparent" style="width: 18rem">
                     <a href="/Src/Products/ProductPage.html"
                       ><img
@@ -361,7 +372,7 @@
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/ProductPage.html" id="link-text"
-                          >Hilma af Klint</a
+                          >Picasso Test 6</a
                         >
                       </h6>
                       <p class="card-text">
