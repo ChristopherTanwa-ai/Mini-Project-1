@@ -70,6 +70,16 @@
                 
                 <!--Artist Filter-->
 
+                <!--I have added a new id to link the text and the checkbox. This is done on all id's below.
+
+                In order to add new filters simply follow these steps: 
+                1. copy-paste from <div class="row ps-4"> until the respective </div>. 
+                2. Go to the line starting with: input -> onclick="filterObjects(...).
+                3. Add the correct filter name and filter type in the parameters eg. onclick="filterObjects('Van-gogh', 'Artist')"  
+                4. Find the products that uses this filter and add to their filterDiv
+                5. Save.
+              -->
+                
                 <h6 id="sidenav-header" class="mx-0">Artist</h6>
                 <div class="row ps-4">
                   <div class="form-check mb-2">
@@ -78,13 +88,14 @@
                       class="form-check-input"
                       type="checkbox"
                       value=""
-                      id="artist1"
+                      id="artist1"  
                     />
                     <label class="form-check-label " for="artist1">
                       <p class="lead mx-0 my-0">Van Gogh</p>
                     </label>
                   </div>
                 </div>
+                
                 <div class="row ps-4">
                   <div class="form-check mb-2">
                     <input
@@ -217,6 +228,9 @@
               <div class="row pt-4">
 
                 <!--Product overview Test 1-->
+                
+                <!--I have added the following line to enable the filter to all products: filterDiv [Artist] [Style] [Format]
+                You can view the added line for each eg.: <div id="Posters" class="col filterDiv Van-gogh Impressionist A3"-->
 
                 <div id="Posters" class="col filterDiv Van-gogh Impressionist A3">
                   
@@ -398,6 +412,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!--Added the new script below for the logic behind the filter-->
+
     <script src="scripts.js"></script>
   </body>
 </html>
