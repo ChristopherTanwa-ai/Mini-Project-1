@@ -108,6 +108,9 @@
       
                 </div>
               </div>
+              <p><span class="h2" id="message">Your Shopping Cart </span><span class="h4" id = "itemCount"> &nbsp (Your cart is empty)</span></p>
+              <div id = basket>
+            </div>
       
               <div class="card mb-5">
                 <div class="card-body p-4">
@@ -115,7 +118,7 @@
                   <div id="price-total">
                     <p class="mb-0 me-5 d-flex align-items-center">
                       <span class="small text-muted me-2">Order total:</span> <span
-                        class="lead fw-normal">250 kr</span>
+                        class="lead fw-normal" id = "totalAmount">0 kr</span>
                     </p>
                   </div>
       
@@ -124,7 +127,7 @@
       
               <div  id="bottom-btn" class="d-flex justify-content-end">
                 <button type="button" class="btn btn-light btn-lg me-2">Continue shopping</button>
-                <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                <button type="button" class="btn btn-primary btn-lg">Go to payment</button>
               </div>
       
             </div>
@@ -133,5 +136,6 @@
       </section>
   <script>
     document.body.onload = addNameToBasket(); 
+    document.body.onload = showCartTable();
   </script>
 </body>
