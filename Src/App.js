@@ -147,7 +147,7 @@ function showCartTable() {
 
     document.getElementById("basket").innerHTML = cartHTML;
     document.getElementById("itemCount").innerHTML = '&nbsp (' + itemCount + ' item(s) in your cart)';
-    document.getElementById("totalAmount").innerHTML = grandTotal;
+    document.getElementById("totalAmount").innerHTML = grandTotal + " kr";
 }
 
 
