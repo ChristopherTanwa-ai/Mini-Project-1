@@ -47,41 +47,16 @@ function addToCart(id) {
     alert("Succesfully added to the cart");
 }
 
-function removeCartItem(item) {
-    var shopperArray = new Array()
+function removeItemFromCart(ids) {
     if (sessionStorage.getItem('shopping-cart')) {
-        shopperArray = JSON.parse(sessionStorage.getItem('shopping-cart'));
-        var index = shopperArray.indexOf[item];
-        if (index > -1) {
-            shopperArray.splice(index, 1);
-        }
-        sessionStorage.setItem("shopping-cart", JSON.stringify(shopperArray));
-        //sessionStorage.removeItem(shoppingCart[index]);
-        //var shoppingCart2 = JSON.parse(sessionStorage.getItem('shopping-cart'));
-        alert(shopperArray);
-        showCartTable();
+        var shoppingCart = JSON.parse(sessionStorage.getItem('shopping-cart'));
+        shoppingCart.splice(ids,1);
+        var cartJSON = JSON.stringify(shoppingCart);
+        sessionStorage.setItem('shopping-cart', cartJSON);
+        showCartTable()
     }
-
 }
 
-function removeItemFromCart(ids) {
-    var cart = new Array()
-    if (sessionStorage.getItem('shopping-cart')) {
-        cart = JSON.parse(sessionStorage.getItem('shopping-cart'))
-    }
-
-    for (var i in cart) {
-      if (cart[i].id === ids) {
-              cart.splice(i, 1); // removes item from the array
-              sessionStorage.setItem("shopping-cart", JSON.stringify(cart));
-              showCartTable();
-              break;
-          }
-          
-      }
-    }
-
-//makeCartTable();
 function showCartTable() {
     var cartHTML = "";
     var itemCount = 0;
@@ -92,14 +67,16 @@ function showCartTable() {
     var subTotal = 0;
 
     if (sessionStorage.getItem('shopping-cart')) {
+        var idArry = []
         var shoppingCart = JSON.parse(sessionStorage.getItem('shopping-cart'));
         itemCount = shoppingCart.length;
         shoppingCart.forEach(function (item) {
             var cartItem = JSON.parse(item);
+            idArry.push(cartItem.id);
             price = parseInt(cartItem.price);
             quantity = parseInt(cartItem.quan);
             subTotal = price * quantity
-
+            var index = idArry.indexOf(cartItem.id);
             cartHTML += '<div class="card mb-4">' +
                 '<div class="card-body p-4">' +
 
@@ -134,7 +111,7 @@ function showCartTable() {
                 '</div>' +
                 '</div>' +
                 '<div class="col-md-2 d-flex justify-content-center">' +
-                '<button type="button" class="btn btn-danger btn-rounded" onclick = "removeItemFromCart('+ cartItem.id +')">Remove</button>' +
+                '<button type="button" class="btn btn-danger btn-rounded" onclick = "removeItemFromCart(\'' + index + '\')">Remove</button>' +
                 '</div>' +
                 '</div>' +
 
