@@ -14,6 +14,14 @@
     min-height: 100vh;
 }
 
+.filterDiv{
+   display: block;
+}
+
+.hide{
+    display: none;
+}
+
 .lead{
     font-size: 0.9rem !important;
 }
