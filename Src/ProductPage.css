@@ -30,3 +30,33 @@
     padding-bottom: 5px;
 }
 
+@media screen and (max-width: 990px) {
+    #prodtext {
+      margin-right: 0px;
+    }
+  }
+@media screen and (max-width: 990px) {
+    #prodimg {
+      max-width:40vh;
+      padding-bottom: 2%;
+    }
+  }
+@media screen and (max-width: 990px) {
+    #prodheader {
+      text-align: center;
+     
+    }
+  }
+@media screen and (max-width: 990px) {
+    #price {
+      text-align: center;
+     
+    }
+  }
+@media screen and (max-width: 990px) {
+    #buy {
+      text-align: center;
+     display: flex;
+     justify-content: center;
+    }
+  }
