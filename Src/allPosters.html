@@ -12,12 +12,12 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    
+
     <title>Document</title>
   </head>
 
   <body>
-     <header class="nav">
+    <header class="nav">
       <div class="logo">
         <a href="/Src/index.html">
           <img
@@ -59,16 +59,14 @@
       </div>
     </header>
 
-    
-    
     <div class="container-fluid" id="main-container">
       <div class="row">
-     
+        <div class="container-md"></div>
         <div id="sidenav" class="col-12 col-md-2">
-          <div class="sidenav mt-5">
+          <h3 class="pt-3 text-center">Filter</h3>
+          <div class="sidenav mt-3">
             <div class="row mb-3">
               <div class="container-fluid ps-3 mb" id="main-container">
-                
                 <!--Artist Filter-->
 
                 <!--I have added a new id to link the text and the checkbox. This is done on all id's below.
@@ -80,265 +78,334 @@
                 4. Find the products that uses this filter and add to their filterDiv
                 5. Save.
               -->
-                
-                <h6 id="sidenav-header" class="mx-0">Artist</h6>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('A.P.Atelier', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist1"  
-                    />
-                    <label class="form-check-label " for="artist1">
-                      <p class="lead mx-0 my-0">A.P Atelier</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Indigo', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist2"  
-                    />
-                    <label class="form-check-label " for="artist2">
-                      <p class="lead mx-0 my-0">The Indigo Collection No2</p>
-                    </label>
-                  </div>
-                </div>
-                
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('HilmaAfKlint', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist3"  
-                    />
-                    <label class="form-check-label " for="artist3">
-                      <p class="lead mx-0 my-0">Hilma af Klint </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('JohnMiller', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist4"  
-                    />
-                    <label class="form-check-label " for="artist4">
-                      <p class="lead mx-0 my-0">John Miller </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Klorofyl', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist5"  
-                    />
-                    <label class="form-check-label " for="artist5">
-                      <p class="lead mx-0 my-0">Klorofyl </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('MathooArt', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist6"  
-                    />
-                    <label class="form-check-label " for="artist6">
-                      <p class="lead mx-0 my-0">MathooArt </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Matisse', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist7"  
-                    />
-                    <label class="form-check-label " for="artist7">
-                      <p class="lead mx-0 my-0">Matisse </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Monet', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist8"
-                    />
-                    <label class="form-check-label" for="artist8">
-                      <p class="lead mx-0 my-0">Monet</p>
-                    </label>
-                  </div>
-                </div>
-               
-                
-           
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Picasso', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist9"
-                    />
-                    <label class="form-check-label" for="artist9">
-                      <p class="lead mx-0 my-0">Picasso</p>
-                    </label>
-                  </div>
-                </div>
+              <div class="row">
+                <div class="accordion-item col-4 col-md-12">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      <h6 id="sidenav-header" class="mx-0">Artist</h6>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('A.P.Atelier', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">A.P Atelier</p>
+                          </label>
+                        </div>
+                      </div>
 
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Positano', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist10"  
-                    />
-                    <label class="form-check-label " for="artist10">
-                      <p class="lead mx-0 my-0">Positano</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Taisho', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist11"  
-                    />
-                    <label class="form-check-label " for="artist11">
-                      <p class="lead mx-0 my-0">Taisho</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('WilliamMorris', 'Artist')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="artist12"  
-                    />
-                    <label class="form-check-label " for="artist12">
-                      <p class="lead mx-0 my-0">William Morris</p>
-                    </label>
-                  </div>
-                </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Indigo', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">
+                              The Indigo Collection No2
+                            </p>
+                          </label>
+                        </div>
+                      </div>
 
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('HilmaAfKlint', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">Hilma af Klint</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('JohnMiller', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">John Miller</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Klorofyl', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">Klorofyl</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('MathooArt', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">MathooArt</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Matisse', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">Matisse</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Monet', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist2"
+                          />
+                          <label class="form-check-label" for="artist2">
+                            <p class="lead mx-0 my-0">Monet</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Picasso', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist3"
+                          />
+                          <label class="form-check-label" for="artist3">
+                            <p class="lead mx-0 my-0">Picasso</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Positano', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">Positano</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Taisho', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">Taisho</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('WilliamMorris', 'Artist')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="artist1"
+                          />
+                          <label class="form-check-label" for="artist1">
+                            <p class="lead mx-0 my-0">William Morris</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 <!--Style Filter-->
-
-                <h6 id="sidenav-header" class="mx-0">Style</h6>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Impressionist', 'Style')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="style13"
-                    />
-                    <label class="form-check-label" for="style13">
-                      <p class="lead mx-0 my-0">Impressionist</p>
-                    </label>
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('Cubism', 'Style')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="style2"
-                    />
-                    <label class="form-check-label" for="style2">
-                      <p class="lead mx-0 my-0">Cubism</p>
-                    </label>
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                    onclick="filterObjects('Abstract', 'Style')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="style3"
-                    />
-                    <label class="form-check-label" for="style3">
-                      <p class="lead mx-0 my-0">Abstract</p>
-                    </label>
+                <div class="accordion-item col-4 col-md-12">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <h6 id="sidenav-header" class="mx-0">Style</h6>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Impressionist', 'Style')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="style1"
+                          />
+                          <label class="form-check-label" for="style1">
+                            <p class="lead mx-0 my-0">Impressionist</p>
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Cubism', 'Style')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="style2"
+                          />
+                          <label class="form-check-label" for="style2">
+                            <p class="lead mx-0 my-0">Cubism</p>
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('Abstract', 'Style')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="style3"
+                          />
+                          <label class="form-check-label" for="style3">
+                            <p class="lead mx-0 my-0">Abstract</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <!--Format Filter-->
-
-                <h6 id="sidenav-header" class="mx-0">Format</h6>
-                <div class="row ps-4">
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('A2', 'Format')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="format1"
-                    />
-                    <label class="form-check-label" for="format1">
-                      <p class="lead mx-0 my-0">A2</p>
-                    </label>
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('A3', 'Format')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="format2"
-                    />
-                    <label class="form-check-label" for="format2">
-                      <p class="lead mx-0 my-0">A3</p>
-                    </label>
-                  </div>
-                  <div class="form-check mb-2">
-                    <input
-                      onclick="filterObjects('A4', 'Format')"
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="format3"
-                    />
-                    <label class="form-check-label" for="format3">
-                      <p class="lead mx-0 my-0">A4</p>
-                    </label>
+                <div class="accordion-item col-4 col-md-12">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <h6 id="sidenav-header" class="mx-0">Format</h6>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="row ps-4">
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('A2', 'Format')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="format1"
+                          />
+                          <label class="form-check-label" for="format1">
+                            <p class="lead mx-0 my-0">A2</p>
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('A3', 'Format')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="format2"
+                          />
+                          <label class="form-check-label" for="format2">
+                            <p class="lead mx-0 my-0">A3</p>
+                          </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input
+                            onclick="filterObjects('A4', 'Format')"
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="format3"
+                          />
+                          <label class="form-check-label" for="format3">
+                            <p class="lead mx-0 my-0">A4</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
+
+           
+
               </div>
             </div>
           </div>
@@ -352,52 +419,75 @@
               <div class="row mx-3">
                 <div class="col">
                   <p class="lead">
-                    Welcome to our poster webshop, where we have an extensive collection of posters to cater to every taste and style. Whether you're looking to decorate your home, office, or any other space, we have a vast selection of posters that are perfect for you. Our posters are printed on high-quality paper and are available in different sizes to fit your needs. From motivational quotes and landscapes to abstract art and movie posters, we have it all. We also offer fast and reliable shipping so you can receive your posters in no time. Browse through our collection today and find the perfect posters to enhance your space.
+                    Welcome to our poster webshop, where we have an extensive
+                    collection of posters to cater to every taste and style.
+                    Whether you're looking to decorate your home, office, or any
+                    other space, we have a vast selection of posters that are
+                    perfect for you. Our posters are printed on high-quality
+                    paper and are available in different sizes to fit your
+                    needs. From motivational quotes and landscapes to abstract
+                    art and movie posters, we have it all. We also offer fast
+                    and reliable shipping so you can receive your posters in no
+                    time. Browse through our collection today and find the
+                    perfect posters to enhance your space.
                   </p>
                 </div>
               </div>
               <div class="row pt-4">
-
                 <!--Product overview Test 1-->
-                
+
                 <!--I have added the following line to enable the filter to all products: filterDiv [Artist] [Style] [Format]
                 You can view the added line for each eg.: <div id="Posters" class="col filterDiv Van-gogh Impressionist A3"-->
 
-                <div id="Posters" class="col filterDiv A.P.Atelier Impressionist A3">
-                  
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv A.P.Atelier Impressionist A3"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/A.P.AtelierPeacock.html"
                       ><img
                         src="../Images/APpeacock.png"
                         class="card-img-top"
                         alt="..."
-                        
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/A.P.AtelierPeacock.html" id="link-text"
+                        <a
+                          href="/Src/Products/A.P.AtelierPeacock.html"
+                          id="link-text"
                           >A.P Atelier</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/A.P.AtelierPeacock.html" id="link-text"
+                        <a
+                          href="/Src/Products/A.P.AtelierPeacock.html"
+                          id="link-text"
                           >Peacock</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/A.P.AtelierPeacock.html" id="price-text">300,00 kr</a>
+                        <a
+                          href="/Src/Products/A.P.AtelierPeacock.html"
+                          id="price-text"
+                          >300,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <!--Product overview Test 2-->
-            
 
                 <!--Product overview Test 3-->
 
                 <div id="Posters" class="col filterDiv Positano Abstract A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/AlberoDeLimone.html"
                       ><img
                         src="/Images/AlberoDeLimone.jpg.webp"
@@ -406,17 +496,25 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/AlberoDeLimone.html" id="link-text"
+                        <a
+                          href="/Src/Products/AlberoDeLimone.html"
+                          id="link-text"
                           >Positano</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/AlberoDeLimone.html" id="link-text"
+                        <a
+                          href="/Src/Products/AlberoDeLimone.html"
+                          id="link-text"
                           >Albero de Limone</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/AlberoDeLimone.html" id="price-text">200,00 kr</a>
+                        <a
+                          href="/Src/Products/AlberoDeLimone.html"
+                          id="price-text"
+                          >200,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
@@ -424,12 +522,16 @@
 
                 <!--Product overview Test 4-->
 
-       
-
                 <!--Product overview Test 5-->
 
-                <div id="Posters" class="col filterDiv HilmaAfKlint Abstract A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv HilmaAfKlint Abstract A2"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/HilmaArtExhibition.html"
                       ><img
                         src="../Images/HilmaArtExhibition.png"
@@ -438,24 +540,38 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/HilmaArtExhibition.html" id="link-text"
+                        <a
+                          href="/Src/Products/HilmaArtExhibition.html"
+                          id="link-text"
                           >Hilma af Klint</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/HilmaArtExhibition.html" id="link-text"
+                        <a
+                          href="/Src/Products/HilmaArtExhibition.html"
+                          id="link-text"
                           >Art Exhibition III</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/HilmaArtExhibition.html" id="price-text">255,00 kr</a>
+                        <a
+                          href="/Src/Products/HilmaArtExhibition.html"
+                          id="price-text"
+                          >255,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div id="Posters" class="col filterDiv JohnMiller Impressionist A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv JohnMiller Impressionist A2"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/JohnMillerSummer.html"
                       ><img
                         src="../Images/JohnMillerSummer.png"
@@ -464,17 +580,25 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/JohnMillerSummer.html" id="link-text"
+                        <a
+                          href="/Src/Products/JohnMillerSummer.html"
+                          id="link-text"
                           >John Miller</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/JohnMillerSummer.html" id="link-text"
+                        <a
+                          href="/Src/Products/JohnMillerSummer.html"
+                          id="link-text"
                           >Summer Estuary</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/JohnMillerSummer.html" id="price-text">150,00 kr</a>
+                        <a
+                          href="/Src/Products/JohnMillerSummer.html"
+                          id="price-text"
+                          >150,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
@@ -482,7 +606,10 @@
 
                 <!--Start-->
                 <div id="Posters" class="col filterDiv Klorofyl Cubism A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/KlorofylSelfPortrait.html"
                       ><img
                         src="../Images/Screenshot 2023-02-21 at 19-51-39 SELF-PORTRAIT 02.png"
@@ -491,23 +618,37 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/KlorofylSelfPortrait.html" id="link-text"
+                        <a
+                          href="/Src/Products/KlorofylSelfPortrait.html"
+                          id="link-text"
                           >Klorofyl</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/KlorofylSelfPortrait.html" id="link-text"
+                        <a
+                          href="/Src/Products/KlorofylSelfPortrait.html"
+                          id="link-text"
                           >Self Portrait</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/KlorofylSelfPortrait.html" id="price-text">255,00 kr</a>
+                        <a
+                          href="/Src/Products/KlorofylSelfPortrait.html"
+                          id="price-text"
+                          >255,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv WilliamMorris Abstract A4">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv WilliamMorris Abstract A4"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/LifeAndLove.html"
                       ><img
                         src="../Images/LifeandLove.jpg"
@@ -526,13 +667,21 @@
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/LifeAndLove.html" id="price-text">150,00 kr</a>
+                        <a href="/Src/Products/LifeAndLove.html" id="price-text"
+                          >150,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv MathooArt Impressionist A3">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv MathooArt Impressionist A3"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/MaThooArtSimply.html"
                       ><img
                         src="../Images/MaThooArtSimply.png"
@@ -541,23 +690,34 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/MaThooArtSimply.html" id="link-text"
+                        <a
+                          href="/Src/Products/MaThooArtSimply.html"
+                          id="link-text"
                           >MaThooArt</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/MaThooArtSimply.html" id="link-text"
+                        <a
+                          href="/Src/Products/MaThooArtSimply.html"
+                          id="link-text"
                           >Simply Living x The Breakfast</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/MaThooArtSimply.html" id="price-text">250,00 kr</a>
+                        <a
+                          href="/Src/Products/MaThooArtSimply.html"
+                          id="price-text"
+                          >250,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Matisse Abstract A4">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Matisse Abstract A4">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/MatisseBerggruen.html"
                       ><img
                         src="../Images/Berggruen&cie.jpg"
@@ -566,23 +726,34 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/MatisseBerggruen.html" id="link-text"
+                        <a
+                          href="/Src/Products/MatisseBerggruen.html"
+                          id="link-text"
                           >Matisse</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/MatisseBerggruen.html" id="link-text"
+                        <a
+                          href="/Src/Products/MatisseBerggruen.html"
+                          id="link-text"
                           >Berggruen & Cie</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/MatisseBerggruen.html" id="price-text">250,00 kr</a>
+                        <a
+                          href="/Src/Products/MatisseBerggruen.html"
+                          id="price-text"
+                          >250,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Monet Impressionist A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Monet Impressionist A2">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/MonetTheArtistsGaden.html"
                       ><img
                         src="../Images/Monet - The Artist's Garden at Vétheuil Plakat.png"
@@ -591,23 +762,34 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/MonetTheArtistsGaden.html" id="link-text"
+                        <a
+                          href="/Src/Products/MonetTheArtistsGaden.html"
+                          id="link-text"
                           >Claude Monet</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/MonetTheArtistsGaden.html" id="link-text"
+                        <a
+                          href="/Src/Products/MonetTheArtistsGaden.html"
+                          id="link-text"
                           >The Artist's Aarden at Vétheuil</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/MonetTheArtistsGaden.html" id="price-text">200,00 kr</a>
+                        <a
+                          href="/Src/Products/MonetTheArtistsGaden.html"
+                          id="price-text"
+                          >200,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Picasso Cubism A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Picasso Cubism A2">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/Paix.html"
                       ><img
                         src="../Images/Screenshot 2023-03-06 at 12-24-15 Et La Paix exhibition poster - Picasso.png"
@@ -626,13 +808,18 @@
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/Paix.html" id="price-text">150,00 kr</a>
+                        <a href="/Src/Products/Paix.html" id="price-text"
+                          >150,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Picasso Cubism A3">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Picasso Cubism A3">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/PortraitDeMarie.html"
                       ><img
                         src="../Images/PortraitdeMarie-ThereseWalter.png"
@@ -641,23 +828,34 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/PortraitDeMarie.html" id="link-text"
+                        <a
+                          href="/Src/Products/PortraitDeMarie.html"
+                          id="link-text"
                           >Pablo Picasso</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/PortraitDeMarie.html" id="link-text"
+                        <a
+                          href="/Src/Products/PortraitDeMarie.html"
+                          id="link-text"
                           >Portrait de Marie-Therese Walter</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/PortraitDeMarie.html" id="price-text">300,00 kr</a>
+                        <a
+                          href="/Src/Products/PortraitDeMarie.html"
+                          id="price-text"
+                          >300,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Taisho Impressionist A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Taisho Impressionist A2">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/TaishoSundayMorning.html"
                       ><img
                         src="../Images/TaishoSundayMorning.png"
@@ -666,23 +864,34 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/TaishoSundayMorning.html" id="link-text"
+                        <a
+                          href="/Src/Products/TaishoSundayMorning.html"
+                          id="link-text"
                           >Taisho</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/TaishoSundayMorning.html" id="link-text"
+                        <a
+                          href="/Src/Products/TaishoSundayMorning.html"
+                          id="link-text"
                           >Sunday Morning</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/TaishoSundayMorning.html" id="price-text">230,00 kr</a>
+                        <a
+                          href="/Src/Products/TaishoSundayMorning.html"
+                          id="price-text"
+                          >230,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Taisho Impressionist A4">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Taisho Impressionist A4">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/TaishoUdon.html"
                       ><img
                         src="../Images/TaishoUdon.png"
@@ -701,19 +910,24 @@
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/TaishoUdon.html" id="price-text">230,00 kr</a>
+                        <a href="/Src/Products/TaishoUdon.html" id="price-text"
+                          >230,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="Posters" class=" col filterDiv Indigo Abstract A2">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div id="Posters" class="col filterDiv Indigo Abstract A2">
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/UnPoDiBlu.html"
                       ><img
                         src="../Images/Un Po' Di Blu No2 Plakat.png"
                         class="card-img-top"
                         alt="..."
-                    /></a> 
+                    /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
                         <a href="/Src/Products/UnPoDiBlu.html" id="link-text"
@@ -726,15 +940,23 @@
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/UnPoDiBlu.html" id="price-text">300,00 kr</a>
+                        <a href="/Src/Products/UnPoDiBlu.html" id="price-text"
+                          >300,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <!--Product overview Test 6-->
-                <div id="Posters" class="col filterDiv HilmaAfKlint Abstract A4">
-                  <div class="card border-0 bg-transparent" style="width: 18rem">
+                <div
+                  id="Posters"
+                  class="col filterDiv HilmaAfKlint Abstract A4"
+                >
+                  <div
+                    class="card border-0 bg-transparent"
+                    style="width: 18rem"
+                  >
                     <a href="/Src/Products/HilmaChildhood.html"
                       ><img
                         src="../Images/Hilma af Klint - The Ten Largest Childhood No. 2 Plakat.png"
@@ -743,17 +965,25 @@
                     /></a>
                     <div class="card-body bg-transparent">
                       <h6 class="card-title my-0">
-                        <a href="/Src/Products/HilmaChildhood.html" id="link-text"
+                        <a
+                          href="/Src/Products/HilmaChildhood.html"
+                          id="link-text"
                           >Hilma af Klint</a
                         >
                       </h6>
                       <p class="card-text">
-                        <a href="/Src/Products/HilmaChildhood.html" id="link-text"
+                        <a
+                          href="/Src/Products/HilmaChildhood.html"
+                          id="link-text"
                           >The Ten Largest Childhood</a
                         >
                       </p>
                       <p class="card-text">
-                        <a href="/Src/Products/HilmaChildhood.html" id="price-text">250,00 kr</a>
+                        <a
+                          href="/Src/Products/HilmaChildhood.html"
+                          id="price-text"
+                          >250,00 kr</a
+                        >
                       </p>
                     </div>
                   </div>
